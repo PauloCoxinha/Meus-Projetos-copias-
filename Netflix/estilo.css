@@ -6,6 +6,30 @@
 }
 
 @font-face {
-    font-family: 'NetflixLight';
+    font-family: 'netflixLight';
     src: url('NetflixSans-Light.otf') format(opentype);
+}
+
+@font-face {
+    font-family: 'netflixMedio';
+    src: url('NetflixSans-Medium.otf') format(opentype);
+}
+
+@font-face {
+    font-family: 'netflixRegular';
+    src: url('NetflixSans-Regular.otf') format(opentype);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-align: right;
+}
+div.logo{
+    
+   
+
 }
