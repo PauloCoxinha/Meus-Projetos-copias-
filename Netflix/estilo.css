@@ -20,16 +20,101 @@
     src: url('NetflixSans-Regular.otf') format(opentype);
 }
 
+:root{
+    --fonte1: 'netflixBold', arial, verdana;
+    --fonte2: 'netflixLight', arial, verdana;
+    --fonte3: 'netflixMedio', arial, verdana;
+    --fonte4: 'netflixRegular', arial, verdana;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
-}
-
-a{
-    text-align: right;
-}
-div.logo{
+    color: white;
     
-   
+    
+}
+
+div.imagemfundo{
+    background: url('Imagens/fundo\ principal.jfif') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: inset 0px 0px 1300px 80px rgb(0, 0, 0);
+}
+
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    margin-right: 70px;
+    height: 80px;
+    
+    
+    
 
 }
+
+div.container  {
+ padding-left: 45px;
+    
+
+}
+
+.links {
+    display: flex;}
+
+
+.links a {
+    margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+    
+    
+    
+}
+
+p > a#caixa1{
+    border: 2px solid #5E5E5E;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.568);
+    font-family: var(--fonte3);
+    box-sizing: border-box;
+    text-align: center;
+
+}
+p{
+  text-align: center;  
+}
+
+h1{
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 50px;
+    margin-top: 70px;
+    padding-top: 130px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+p.par1{
+    font-family: var(--fonte3);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px 2px black;
+    padding-bottom: 20px;
+
+}
+
+p.par2{
+    font-family: var(--fonte2);
+    font-size: 20px;
+}
+
