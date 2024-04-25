@@ -36,16 +36,38 @@
     
 }
 
-div.imagemfundo{
+section.imagemfundo{
     background: url('Imagens/fundo\ principal.jfif') no-repeat fixed;
     background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100vh;
     box-shadow: inset 0px 0px 1300px 80px rgb(0, 0, 0);
+    overflow: hidden;
 }
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
 
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Imagens/fundo\ principal.jfif') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Ajuste o valor conforme necessário para escurecer a imagem de fundo */
+}
 
 
 .container{
@@ -68,26 +90,44 @@ div.container  {
 }
 
 .links {
-    display: flex;}
+    display: flex;
+    justify-content: center;
+
+}
+    
 
 
 .links a {
     margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+    text-align: center; /* Centralizar o texto */
+    display: inline-block; /* Para que a largura seja ajustada ao conteúdo */
+    padding: 7px 14px; /* Ajustar o preenchimento para que o texto fique centralizado */
+    border: 1px solid #C11119;
+    background-color: #e90813;
+    border-radius: 4px;
+    font-family: var(--fonte2);
+    font-weight: lighter;
+    box-sizing: border-box;
+    text-decoration: none;
     
     
     
 }
 
+
 p > a#caixa1{
-    border: 2px solid #5E5E5E;
+    border: 1px solid #5E5E5E;
     border-radius: 3px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.568);
-    font-family: var(--fonte3);
+    font-family: var(--fonte2);
+    font-weight: lighter;
     box-sizing: border-box;
     text-align: center;
+    padding: 4px;
 
 }
+
 p{
   text-align: center;  
 }
@@ -100,7 +140,7 @@ h1{
     padding-top: 130px;
     padding-bottom: 10px;
     font-weight: bolder;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 0.5px 0px 0px #60C6E6;
 }
 
 p.par1{
